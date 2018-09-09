@@ -1,0 +1,16 @@
+group 'com.lifenotes'
+version '1.0-SNAPSHOT'
+description """This is a sample project that demonstrates the implementation of a java Gradle plugin"""
+
+apply plugin: 'java'
+apply plugin: lifenotes.plugin.SimplePlugin
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
